@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael55555/purple-rain.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "build": "webpack",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
+  "homepage": "https://github.com/Michael55555/purple-rain",
   "author": "Michael55555",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^3.2.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
